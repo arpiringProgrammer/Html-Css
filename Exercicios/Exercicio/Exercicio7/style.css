@@ -1,0 +1,19 @@
+#corPadrao a:hover {
+    color: blue;
+}
+
+#pagina-cinza {
+    background-color: lightgray
+}
+
+#pagina-verde {
+    background-color:lightgreen
+}
+
+#pagina-amarela {
+    background-color:yellow
+}
+
+#orange {
+    color: orange
+}

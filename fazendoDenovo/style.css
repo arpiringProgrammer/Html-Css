@@ -1,0 +1,172 @@
+@charset "UTF-8";
+
+/* Garante que padding e border fiquem dentro da largura*/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden; /* Remove qualquer overflow lateral*/
+    padding: 0px;
+    margin: 0px;
+    background-color: #c3edb6;
+}
+
+.TheHeader {
+    background-image: linear-gradient(to bottom,#3DDC84,#185132);
+    color: white;
+    padding: 1px 0 10px 0;
+}
+
+.curiosity {
+    text-align: center;
+    padding: 1px;
+}
+
+.everything {
+    text-align: center;
+    margin: 0 0 30px 0
+}
+
+.TheOptions {
+    padding: 9px 9px 9px 9px;
+}
+
+.TheOptions:hover {
+    color: black;
+    background-color: #2AA05E;
+    border-radius: 10px 10px 10px 10px;
+}
+
+.MainContent {
+    background-color: white;
+    padding: 1px 20px 10px 20px;
+    margin: 0 auto;
+    width: 800px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (max-width: 750px) {
+    .MainContent {
+        margin: 0;
+        border-radius: 0;
+        width: 100%;
+    }
+}
+
+@font-face {
+    font-family: "MinhaFonte";
+    src:url(fontes/idroid.otf) format("otf");
+}
+
+.FirstTitle {
+    color: #66997D;
+    font-family: "MinhaFonte", sans-serif;
+}
+
+.bothTitle {
+    font-family: "MinhaFonte", sans-serif;
+    color: #467F5F;
+    background-image: linear-gradient(to right,#C6EBD6, white);
+    padding: 0px 0px 0px 10px;
+}
+
+.BeBold {
+    color: #588F71;
+}
+
+.BeBold::after {
+    content: "🔗";
+}
+
+.GreenSquare {
+    margin: 10px 0px 0px 0px;
+    background-color: #C5EBD6;
+    border-top-left-radius:10px;
+    border-top-right-radius:10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+}
+
+.EvenGreenerTitle {
+    background-color: #2FA866;
+    margin: 0px 1px 10px 0px;
+    padding: 10px 0px 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.LightGreenContent {
+    padding: 0px 10px 10px 10px;
+}
+
+.inTheEnd {
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+}
+
+.lista {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 60px;
+}
+
+@media (max-width: 750px) {
+    .lista {
+        display: flex;
+        gap: 20px;
+    }
+}
+
+.photo {
+    display: flex;
+    justify-content: center;
+}
+
+.video-container {
+    display:flex;
+    justify-content: center;
+}
+
+.youtube-video {
+    display: none;
+}
+
+.youtube.img {
+    display: block;
+    max-width: 100%; /* garante que não ultrapasse a tela*/
+    height: auto;
+}
+
+.rodaPe {
+    background-color: #1A5C38;
+    color:#74A68A;
+    margin: 0px;
+    padding: 10px;
+    text-align: center;
+}
+
+.italico {
+    color:white;
+}
+
+.text {
+    margin: 5px;
+    text-indent: 30px;
+}
+
+@media (max-width: 850px) {
+    .youtube-img {
+        display: none;
+    }
+
+    .youtube-video {
+        display: block;
+        width: 100%;
+        height: 200px;
+    }
+}

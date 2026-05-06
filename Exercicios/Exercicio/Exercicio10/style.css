@@ -1,0 +1,21 @@
+body {
+    background: black;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+div {
+    text-align: center;
+}
+
+#change {
+    width: 400px;
+    height: auto;
+}
+
+#white {
+    color: white;
+}

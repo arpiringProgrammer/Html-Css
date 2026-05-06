@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatação de Textos</title>
+    <style>
+        mark {
+            background-color: limegreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Principais formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Nessa frase temos um <b> termo em negrito </b> usando a tag p (não semântica) </p>
+    <p>Nesta frase, tenho um <strong>termos em destaque</strong> usando </p>
+    <h2>Itálico / Ênfase</h2>
+    <p>Nesta frase, temos um <i>termo em itálico </i><em>usando a tag</em></p>
+    <h2>Texto marcado</h2>
+    <p>Podemos criar também <mark style="background-color:aliceblue"> um texto marcado </mark> usando a tag MARK</p>
+    <p>E no outro parágrafo, temos <mark>outro texto marcado </mark></p>
+    <h2>Texto grande e pequeno</h2>
+    <p>Estamos criando um texto grande e um texto pequeno nesse parágrafo</p>
+    <h2>Texto deletado</h2>
+    <p>podemos marcar um texto como <del>excluido </del>para indicar que ele deve sr lido, mas não considerado</p>
+    <h2>Texto inserido</h2>
+    <p>podemos marcar um texto como <ins> inserido </ins> p ara dar uma enfase e indicar que ele foi adicionado depois.</p>
+    <h2>Texto sobrescrito</h2>
+    <p>para inserir coisas do tipo <sup>x20 + 3</sup></p>
+    <h2>Texto subscrito</h2>
+    <p>para inserir coisas do tipo <sub>H20</sub></p>
+    <h2>codigo fonte</h2>
+    <p>o comando <code>document.getElementById('teste') </code>e escrito em linguagem javascript</p>
+    <code>
+        num = int(input('digite um numero'))
+        if num % 2 == 0:
+            print(f'O numero {num} e par)
+        else:
+            printf(f'o numero {num} e impar')
+        printf('fim do programa')
+    </code>
+    <h2>citações</h2>
+    <p>como diria o pai de um amigo: <q> o computador é um burro mioto rápido </q></p>
+    <h2>citações completas</h2>
+    <p>segundo jeff noble no seu livro html para leigos:
+        <blockquote cite="https://www.youtube.com/watch?v=4ynvsrkamt8&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n&index=24">
+            a diferença entre elementos inline e um bloco de texto é importante. os elementos html neste capitulo descrevem os blocos de texto
+        </blockquote>
+        <h2>abreviações</h2>
+        <p>estou estudando <abbr title="hypertext markup language"> html </abbr> e <abbr title="">css</abbr>. estou adorando!</p>
+        <h2>texto invertido</h2>
+        <bdo dir="rtl">estou aprendendo a criar coisas em html</bdo>
+        <bdo dir="ltr">estou aprendendo a criar coisas em css</bdo>
+    </p>
+</body>
+</html>
