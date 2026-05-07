@@ -1,4 +1,4 @@
 # Html-Css
 Curso de html 5 e css 3
 
-ESTOU APRENDENDO A CRIAR SITES E AGORA VOU GERENCIARMEUS REPOSITÓRIOS!
+Estou aprendendo a criar sites e agora vou genenciar meus repositórios!
