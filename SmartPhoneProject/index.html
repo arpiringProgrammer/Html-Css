@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Redes Sociais</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="pacote-d013/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="fundo">
+        <img src="pacote-d013/imagens/fundo-madeira.jpg" alt="imagem_amadeirada" class="madeira">
+        <img src="pacote-d013/imagens/frame-iphone.png" alt="iphone" class="iphone">
+        <img src="pacote-d013/imagens/tela-home.jpg" alt="home_image" class="logo"> 
+        <div class="imagens">
+            <img src="pacote-d013/imagens/logo-home.jpg" alt="home" class="icon" data-target="homeIframe">  
+            <iframe src="www.cursoemvideo.com" frameborder="0" id="homeIframe" class="iframe active"></iframe>  
+            <img src="pacote-d013/imagens/logo-youtube.jpg" alt="youtube" class="icon" data-target="youtubeIframe">
+            <iframe src="www.youtube.com/cursoemvideo" frameborder="0" id="youtubeIframe" class="iframe"></iframe>
+            <img src="pacote-d013/imagens/logo-github.jpg" alt="github" class="icon" data-target="githubIframe">
+            <iframe src="www.github.com/gustavoguanabara" frameborder="0" id="githubIframe" class="iframe"></iframe>
+            <img src="pacote-d013/imagens/logo-instagram.jpg" alt="instagram" class="icon" data-target="instagramIframe">
+            <iframe src="www.instagram.com/gustavoguanabara" frameborder="0" id="instagramIframe" class="iframe"></iframe>
+            <img src="pacote-d013/imagens/logo-twitter.jpg" alt="twitter" class="icon" data-target="twitterIframe">
+            <iframe src="www.twitter.com/cursoemvideo" frameborder="0" id="twitterIframe" class="iframe"></iframe>
+            <img src="pacote-d013/imagens/logo-facebook.jpg" alt="facebook" class="icon" data-target="facebokIframe">
+            <iframe src="www.facebook.com/cursoemvideo" frameborder="0" id="facebookIframe" class="iframe"></iframe>
+        </div>
+    </div>
+    <script>
+        document.querySelectorAll('.icon').forEach(icon => {
+        icon.addEventListener('click', () => {
+            // Esconde todos os iframes
+            document.querySelectorAll('.iframe').forEach(iframe => {
+                iframe.classList.remove('active');
+            });
+
+            // Mostra apenas o iframe correspondente
+            const targetId = icon.getAttribute('data-target');
+            document.getElementById(targetId).classList.add('active');
+        });
+    });
+    </script>
+</body>
+</html>

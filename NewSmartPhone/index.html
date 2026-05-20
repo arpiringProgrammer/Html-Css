@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto do zero</title>
+    <link rel="shortcut icon" href="pacote-d013/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="madeira">
+        <div class="iphone">
+            <img src="pacote-d013/imagens/frame-iphone.png" alt="iphone" class="iphone">
+            <!-- Tela que será trocada dinamicamente -->
+            <iframe id="tela" src="" class="telaHome" frameborder="0" scrolling="auto" style=" width:256px; height:454px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); z-index:1;">
+            </iframe>
+        </div>
+
+        <div class="social_midia">
+            <img src="pacote-d013/imagens/logo-home.jpg" alt="home_pic" class="home">
+            <img src="pacote-d013/imagens/logo-youtube.jpg" alt="youtube_pic" class="youtube" onclick="mudarTela('pacote-d013/imagens/tela-youtube.png')">
+            <img src="pacote-d013/imagens/logo-github.jpg" alt="github_pic" class="github" onclick="mudarTela('pacote-d013/imagens/tela-github.jpg')">
+            <img src="pacote-d013/imagens/logo-instagram.jpg" alt="instagram_pic" class="instagram" onclick="mudarTela('pacote-d013/imagens/tela-instagram.jpg')">
+            <img src="pacote-d013/imagens/logo-twitter.jpg" alt="twitter_pic" class="twitter" onclick="mudarTela('pacote-d013/imagens/tela-twitter.jpg')">
+            <img src="pacote-d013/imagens/logo-facebook.jpg" alt="facebook_pic" class="facebook" onclick="mudarTela('pacote-d013/imagens/tela-facebook.jpg')">
+        </div>
+
+        <script>
+            function mudarTela(novaImagem) {
+                const tela = document.getElementById("tela");
+                tela.src = novaImagem;
+                tela.style.display = "block"; // só aparece quando clicar
+            }
+        </script>
+    </section>
+</body>
+</html>
