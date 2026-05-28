@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/*Typical device Break points
+-----------------------------
+Pequenas telas: até 480px
+Celular: de 481px até 767px
+Tablet: 768px até 1023px
+desktop: 1024px até 1439px
+tv: acima de 1440px 
+*/
+
+@media screen and (min-width: 768px) {
+
+
+    i#burguer {
+        display:none;
+    }
+
+    menu {
+        display:block;
+    }
+
+    menu > ul > li {
+        display:inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
