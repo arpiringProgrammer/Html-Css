@@ -11,6 +11,14 @@ desktop: 1024px até 1439px
 tv: acima de 1440px 
 */
 
+/*MEDIDAS MODERNAS
+mobile 320px - 767px smartphones pequenos ate tablets. layout em coluna unica.
+tablet 768px - 1023px ipads e tablets android. começam layouts em duas colunas.
+desktop 1024px - 1439px notebooks e monitores medios. layout completo com varias colunas
+large desktop 1440px+ monitores grandes e tvs. grids amplos maior aproveitamento de espaço.
+
+*/
+
 @media print { /*IMPRESSÃO*/
 
     * {
