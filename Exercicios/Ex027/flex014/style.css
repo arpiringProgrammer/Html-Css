@@ -24,3 +24,41 @@ h1 {
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
+
+header {
+        margin: 20px;
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    background-color: var(--cor-secundaria);
+    padding: 20px;
+}
+
+section > div:first-child {
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+section > div:last-child {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+}
+
+section > div img, section > div iframe {
+    margin: 0 auto;
+    display: block;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer > h1 {
+    margin: 20px;
+}
