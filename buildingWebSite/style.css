@@ -1,0 +1,45 @@
+@charset "UFT-8";
+
+.container {
+    height: 200px;
+    width: 300px;
+    border: 2px solid black;
+    display: grid;
+    grid-template: 20% 10% 60% 10% / 200px 100px;
+    
+}
+
+.firstLine {
+    background-color: red;
+    grid-area: 1 / 1 / 2 / 3;
+    display: grid;
+    place-items: center;
+}
+
+.secondLine {
+    background-color: blue;
+    grid-area: 2 / 1 / 3 / 3;
+    display: grid;
+    place-items: center;
+}
+
+.thirdLine {
+    background-color: green;
+    grid-area: 3 / 1 / 4 / 2;
+    display: grid;
+    place-items: center;
+}
+
+.sideLine {
+    background-color: orange;
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    place-items: center;
+}
+
+.forthLine {
+    background-color: yellow;
+    grid-area: 4 / 1 / 5 / 3;
+    display: grid;
+    place-items: center;   
+}
